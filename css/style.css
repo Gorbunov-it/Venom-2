@@ -4,6 +4,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #fff;
+  background-color: #14131a;
 }
 .container {
   max-width: 1400px;
@@ -82,4 +83,86 @@ body {
 }
 .blood {
   background: url("../image/blood.png") no-repeat top right, #14131a url("../image/background.png") no-repeat center center / 100%;
+}
+.primary-bg {
+  background: url("../image/background.png") no-repeat center center / 100%;
+}
+.content {
+  display: flex;
+}
+.col {
+  flex-basis: 50%;
+}
+.content-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.content-text {
+  max-width: 423px;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.content-subtitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+.content .list {
+  list-style-type: none;
+  padding: 0;
+}
+.column-list {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20;
+  column-gap: 20px;
+  max-width: 350px;
+}
+.list-item {
+  line-height: 1.5;
+}
+.content .trailer {
+  width: 356px;
+  height: 205px;
+  background: url("../image/trailer-cover.jpg") no-repeat center / contain;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 33px;
+}
+.trailer .play {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.trailer .play-icon {
+  transform: translate(1px, 2px);
+}
+.poster-wrapper {
+  display: flex;
+  align-items: start;
+}
+.poster {
+  width: 320px;
+  border: radius 5px;
+  margin-right: 30px;
+}
+.poster-wrapper .content-subtitle {
+  margin-bottom: 5px;
+}
+.poster-wrapper .list {
+  margin: 0;
+  margin-bottom: 20px;
 }
